@@ -7,7 +7,7 @@ namespace TestFolderBrowserDialog.ViewModels
 {
 	public class MainWindowViewModel : ViewModel
 	{
-		public void AddFolderSelected(FolderSelectionMessage folderSelectionMessage)
+		public static void AddFolderSelected(FolderSelectionMessage folderSelectionMessage)
 		{
 			if (folderSelectionMessage.Response == null)
 			{
@@ -20,7 +20,7 @@ namespace TestFolderBrowserDialog.ViewModels
 		}
 
 		// Some useful code snippets for ViewModel are defined as l*(llcom, llcomn, lvcomm, lsprop, etc...).
-		public void Initialize()
+		public static void Initialize()
 		{
 		}
 	}
